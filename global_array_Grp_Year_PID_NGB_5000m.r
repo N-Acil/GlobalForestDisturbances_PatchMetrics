@@ -1,3 +1,12 @@
+#############################################
+############# NEIGHBOURHOOD METRIC ##########
+#############################################
+
+# Authors:
+#----------
+# Cornelius Senf, Technical University of Munich
+# Nezha Acil, University of Birmingham & University of Leicester
+
 
 slurmId = Sys.getenv('SLURM_ARRAY_TASK_ID')
 i = as.numeric(slurmId )
@@ -44,7 +53,6 @@ crs(dist_map)
 ##################
 l = list()
 for (y in years){
-  #sn = paste0('W:/Acil/Merged/TIFsGrp/Lowest/Annual/20',sprintf("%02d",y),'/PIDsGrp/SHP/',tile,'_UTM_30m_grp_20',sprintf("%02d",y),'_pid_lsm.dbf')
   print(y)
   sn = paste0('/rds/projects/p/pughtam-environ/Acil/Merged/TIFsGrp/Lowest/Annual/20',sprintf("%02d",y),'/PIDsGrp/SHP/',tile,'_UTM_30m_grp_20',sprintf("%02d",y),'_pid_lsm.dbf')
   if (!file.exists(sn)) next

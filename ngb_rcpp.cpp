@@ -1,3 +1,10 @@
+//##################################################
+//############# NEIGHBOURHOOD CALCULATION ##########
+//##################################################
+
+// Author: Cornelius Senf, Technical University of Munich
+
+
 // [[Rcpp::plugins(cpp11)]]
 // [[Rcpp::depends(RcppThread)]]
 
